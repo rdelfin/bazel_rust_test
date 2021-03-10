@@ -8,6 +8,12 @@ path = "fake_lib.rs"
 
 [dependencies]
 log = "0.4"
+simple_logger = "1.11"
+bincode = "1.2.1"
+byteorder = "1.4.2"
+ibverbs = {git = "https://github.com/nevenoomo/rust-ibverbs"}
+spin_sleep = "1.0"
+structopt = "0.3.21"
 
 # Read more about these settings here: https://github.com/google/cargo-raze/blob/master/README.md
 [package.metadata.raze]
@@ -21,3 +27,7 @@ targets = [
 ]
 genmode = "Remote"
 rust_rules_workspace_name = "rules_rust"
+
+# These are for allowing us to run build.rs scripts
+[package.metadata.raze.crates.ibverbs.'0.4.2']
+gen_buildrs = true

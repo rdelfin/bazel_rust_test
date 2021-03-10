@@ -13,6 +13,33 @@ licenses([
 
 # Aliased targets
 alias(
+    name = "bincode",
+    actual = "@raze__bincode__1_3_1//:bincode",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
+    name = "byteorder",
+    actual = "@raze__byteorder__1_4_3//:byteorder",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
+    name = "ibverbs",
+    actual = "@raze__ibverbs__0_4_2//:ibverbs",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
     name = "log",
     actual = "@raze__log__0_4_14//:log",
     tags = [
@@ -24,6 +51,24 @@ alias(
 alias(
     name = "simple_logger",
     actual = "@raze__simple_logger__1_11_0//:simple_logger",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
+    name = "spin_sleep",
+    actual = "@raze__spin_sleep__1_0_0//:spin_sleep",
+    tags = [
+        "cargo-raze",
+        "manual",
+    ],
+)
+
+alias(
+    name = "structopt",
+    actual = "@raze__structopt__0_3_21//:structopt",
     tags = [
         "cargo-raze",
         "manual",
