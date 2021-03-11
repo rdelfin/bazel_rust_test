@@ -29,5 +29,5 @@ genmode = "Remote"
 rust_rules_workspace_name = "rules_rust"
 
 # These are for allowing us to run build.rs scripts
-[package.metadata.raze.crates.ibverbs.'0.4.2']
+[package.metadata.raze.crates.ibverbs.'*']
 gen_buildrs = true
